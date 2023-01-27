@@ -15,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebElements {
-@Test
+	@Test
 	public void RelativeLocators() {
 		
 		WebDriverManager.chromedriver().setup();
@@ -33,7 +33,7 @@ public class WebElements {
 		assert1.assertEquals(Actulerror, epexerror, " Error message is mismatched");
 		driver.close();
 		assert1.assertAll();
-		
+		 
 	}
 	
 }

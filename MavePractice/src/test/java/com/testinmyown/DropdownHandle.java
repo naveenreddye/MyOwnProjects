@@ -24,7 +24,7 @@ public class DropdownHandle {
 		 select1.selectByIndex(1);
 		 Thread.sleep(2000);
 		 select1.selectByVisibleText("Australia");
-		 
+		  
 		 
 		 //Multiple dropdown
 		 driver.get("https://www.techlistic.com/p/selenium-practice-form.html");

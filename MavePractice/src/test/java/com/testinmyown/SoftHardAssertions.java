@@ -26,6 +26,6 @@ public class SoftHardAssertions {
 		driver.close();
 		soft.assertAll();
 		
-		
+		 
 	}
 }
