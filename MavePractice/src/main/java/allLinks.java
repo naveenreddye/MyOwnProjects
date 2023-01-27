@@ -18,9 +18,16 @@ public class allLinks {
 		driver1.findElement(By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")).click();
 		List<WebElement> allLinks = driver1.findElements(By.tagName("a"));
 		System.out.println(allLinks.size());
-		for (WebElement webElement : allLinks) {
-		webElement.getText();
-			System.out.print(webElement.getAttribute("href")+"--->");
+		for (WebElement webElement1 : allLinks) {
+			System.out.print(webElement1.getAttribute("href")+"--->");
+			System.out.println(webElement1.getText());
+		}
+		driver1.quit();
+		driver1=new ChromeDriver();
+		driver1.get("https://www.salesforce.com/in/form/signup/freetrial-sales/?d=topnav2-btn-ft");
+		List<WebElement> alldrops = driver1.findElements(By.tagName("option"));
+		for (WebElement webElement : alldrops) {
+			System.out.print(webElement.getAttribute("options"));
 			System.out.println(webElement.getText());
 		}
 		driver1.quit();
