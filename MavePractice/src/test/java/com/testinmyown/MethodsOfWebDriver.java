@@ -23,6 +23,7 @@ public class MethodsOfWebDriver {
 		Thread.sleep(5000);
 		driver.navigate().back();
 		driver.quit();
+		System.out.println(2);
 		
 	}
 }
