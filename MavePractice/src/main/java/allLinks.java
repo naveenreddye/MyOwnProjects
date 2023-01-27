@@ -19,9 +19,9 @@ public class allLinks {
 		List<WebElement> allLinks = driver1.findElements(By.tagName("a"));
 		System.out.println(allLinks.size());
 		for (WebElement webElement : allLinks) {
-			String site=webElement.getText();
-			String site1 = site.trim();
-			System.out.println(site1);
+		webElement.getText();
+			System.out.print(webElement.getAttribute("href")+"--->");
+			System.out.println(webElement.getText());
 		}
 		driver1.quit();
 	}
