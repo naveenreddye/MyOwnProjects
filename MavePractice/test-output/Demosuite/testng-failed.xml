@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demosuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OrangeHRMVerify(failed)">
+    <classes>
+      <class name="com.testinmyown.orangeHRM">
+        <methods>
+          <include name="Verifyname"/>
+        </methods>
+      </class> <!-- com.testinmyown.orangeHRM -->
+    </classes>
+  </test> <!-- OrangeHRMVerify(failed) -->
+</suite> <!-- Failed suite [Demosuite] -->
