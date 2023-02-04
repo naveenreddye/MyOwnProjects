@@ -27,6 +27,8 @@ public class CheckBoxs {
 		driver.findElement(By.id("englishchbx")).click();
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		List<WebElement> allCheck = driver.findElements(By.xpath("//input[@type='checkbox']"));
+		System.out.println(driver.findElement(By.id("latinchbx")).isSelected());
+		System.out.println(driver.findElement(By.id("englishchbx")).isSelected());
 		
        for(int i=0;i<allCheck.size();i++) {
 			
