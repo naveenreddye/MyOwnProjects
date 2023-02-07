@@ -21,10 +21,9 @@ public class MouseHover {
 		Actions action=new Actions(driver);
 		action.moveToElement(men).build().perform();
 		Thread.sleep(3000);
-		List<WebElement> allTags = driver.findElements(By.className("desktop-main"));
-		System.out.println(allTags);
-//		WebElement jeans = driver.findElement(By.linkText("Jeans"));
-//		  action.moveToElement(jeans).perform();
+		
+		WebElement jeans = driver.findElement(By.linkText("Jeans"));
+		  action.moveToElement(jeans).perform();
 		
 
 	}
