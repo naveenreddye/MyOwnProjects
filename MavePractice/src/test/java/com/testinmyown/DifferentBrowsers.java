@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DifferentBrowsers {
 	
-	public static String browser="edge";
+	public static String browser="chrome";
 	public static WebDriver driver;
 
 	public static void main(String[] args) throws Exception {

@@ -21,7 +21,7 @@ public class Keyboard {
 		driver.manage().window().maximize();
 		Actions action =new Actions(driver);
 		WebElement dif = driver.findElement(By.id("nb-diff"));
-		System.out.println("Before copy paste "+dif.getText());
+		System.out.println("Before copy paste : "+dif.getText());
 		WebElement ele = driver.findElement(By.xpath("//*[@id=\"dropZone\"]/div[2]/div/div[6]/div[1]/div/div/div/div[5]"));
 		action.moveToElement(ele).click().perform();
 		action.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
@@ -30,30 +30,30 @@ public class Keyboard {
 		action.moveToElement(ele1).click().perform();
 
 		//		List <WebElement> slno = driver.findElements(By.xpath("//*[@id=\"dropZone\"]/div[2]/div/div[6]/div[3]/div"));
-//		List <WebElement> text=driver.findElements(By.xpath("//*[@id=\"dropZone\"]/div[2]/div/div[6]/div[1]/div/div"));
-//		System.out.println(slno.size());
-//		System.out.println(text.size());
+		//		List <WebElement> text=driver.findElements(By.xpath("//*[@id=\"dropZone\"]/div[2]/div/div[6]/div[1]/div/div"));
+		//		System.out.println(slno.size());
+		//		System.out.println(text.size());
 
 		//System.out.println(slno.getText()+" :"+ text.getText());
-			action.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
-			action.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).perform();
-			System.out.println("After copy paste "+dif.getText());
-			driver.quit();
+		action.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
+		action.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).perform();
+		System.out.println("After copy paste : "+dif.getText());
+		driver.quit();
 
 		//driver.findElement(By.xpath("//*[@id=\"result\"]/div[4]/div[2]/div/div[6]/div[1]/div/div/div/div[5]/pre[7]/span")).sendKeys(Keys.CONTROL+"AC");
-			
-			//pre[@class=' CodeMirror-line ' and @role='presentation']
-			
-			
-			
-			
-			
-			
-			
-			//print all text from the paragraph
-			
-//			slno=driver.findElements(By.className("CodeMirror-linenumber CodeMirror-gutter-elt"));
-//			text=driver
+
+		//pre[@class=' CodeMirror-line ' and @role='presentation']
+
+
+
+
+
+
+
+		//print all text from the paragraph
+
+		//			slno=driver.findElements(By.className("CodeMirror-linenumber CodeMirror-gutter-elt"));
+		//			text=driver
 	}
 
 }
